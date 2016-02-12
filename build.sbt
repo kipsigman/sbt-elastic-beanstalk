@@ -1,3 +1,5 @@
+import bintray.Keys._
+
 sbtPlugin := true
 
 name := "sbt-elastic-beanstalk"
@@ -15,16 +17,11 @@ licenses += ("Apache-2.0", url("https://github.com/kipsigman/sbt-elastic-beansta
 homepage := Some(url("https://github.com/kipsigman/sbt-elastic-beanstalk"))
 scmInfo := Some(ScmInfo(url("https://github.com/kipsigman/sbt-elastic-beanstalk"), "scm:git:git://github.com:kipsigman/sbt-elastic-beanstalk.git"))
 
-publishMavenStyle := true
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases" at nexus + "service/local/staging/deploy/maven2")
-}
+// Bintray Publish settings
+seq(bintraySettings:_*)
+repository in bintray := "kipsigman"
 
-
+// Scripted for testing
 ScriptedPlugin.scriptedSettings
 scriptedLaunchOpts := { scriptedLaunchOpts.value ++
   Seq("-Dplugin.version=" + version.value)

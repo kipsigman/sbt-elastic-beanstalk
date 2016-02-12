@@ -13,9 +13,9 @@ Creates a distribution of your Scala/Play/Akka app for deployment on AWS Amazon 
 Add the following to your `project/plugins.sbt` file:
 
 ```scala
-resolvers += Resolver.bintrayRepo("kipsigman", "maven")
+resolvers += Resolver.bintrayRepo("kipsigman", "sbt-plugins")
 
-addSbtPlugin("kipsigman" % "sbt-elastic-beanstalk" % "0.1.0")
+addSbtPlugin("kipsigman" % "sbt-elastic-beanstalk" % "0.1.1")
 ```
 
 In your `build.sbt` enable the plugin.

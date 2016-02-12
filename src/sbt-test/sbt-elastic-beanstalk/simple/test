@@ -1,0 +1,3 @@
+# check if the file gets created
+> elastic-beanstalk:dist
+$ exists target/elastic-beanstalk/sbt-elastic-beanstalk-test-0.1.0.zip

@@ -15,7 +15,7 @@ Add the following to your `project/plugins.sbt` file:
 ```scala
 resolvers += Resolver.url("bintray-kipsigman-sbt-plugins", url("http://dl.bintray.com/kipsigman/sbt-plugins"))(Resolver.ivyStylePatterns)
 
-addSbtPlugin("kipsigman" % "sbt-elastic-beanstalk" % "0.1.2")
+addSbtPlugin("kipsigman" % "sbt-elastic-beanstalk" % "0.1.3")
 ```
 
 In your `build.sbt` enable the plugin.

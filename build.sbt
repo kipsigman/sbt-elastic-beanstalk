@@ -6,7 +6,7 @@ organization := "kipsigman"
 scalacOptions := Seq("-deprecation", "-unchecked", "-feature")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "2.2.5" % "test"
+  "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 )
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.0.6")

@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 )
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.0.6")
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.1.1")
 
 licenses += ("Apache-2.0", url("https://github.com/kipsigman/sbt-elastic-beanstalk/blob/master/LICENSE"))
 homepage := Some(url("https://github.com/kipsigman/sbt-elastic-beanstalk"))

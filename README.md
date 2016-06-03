@@ -21,7 +21,7 @@ addSbtPlugin("kipsigman" % "sbt-elastic-beanstalk" % "0.1.4")
 In your `build.sbt` enable the plugin.
 
 ```scala
-enablePlugins(ElasticBeanstalk)
+enablePlugins(ElasticBeanstalkPlugin)
 ```
 
 ## Usage
